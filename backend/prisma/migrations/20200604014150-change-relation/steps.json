@@ -1,0 +1,23 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "DeleteModel",
+      "model": "PointsItems"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Points",
+      "field": "items",
+      "type": "Items",
+      "arity": "List"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Items",
+      "field": "points",
+      "type": "Points",
+      "arity": "List"
+    }
+  ]
+}
