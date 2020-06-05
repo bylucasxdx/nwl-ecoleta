@@ -14,7 +14,7 @@ const seed = async (): Promise<void> => {
 
     await Promise.all(
         items.map(async item => {
-            await prisma.items.upsert({
+            await prisma.item.upsert({
                 create: { title: item.title, image: item.image },
                 update: { title: item.title, image: item.image },
                 where: {

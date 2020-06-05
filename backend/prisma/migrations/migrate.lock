@@ -1,6 +1,3 @@
 # Prisma Migrate lockfile v1
 
-20200604004300-init
-20200604005018-init
-20200604011827-init
-20200604014150-change-relation
+20200604233734-points-and-items

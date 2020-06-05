@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.ts",
-    "dev": "ts-node-dev --inspect --transpileOnly --no-notify --ignore-watch node_modules src/shared/infra/http/server.ts",
+    "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpileOnly --no-notify --ignore-watch node_modules src/shared/infra/http/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,8 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^2.0.0-beta.7",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.21.1",
+    "reflect-metadata": "^0.1.13",
+    "tsyringe": "^4.3.0",
     "typescript": "^3.9.3"
   },
   "devDependencies": {
